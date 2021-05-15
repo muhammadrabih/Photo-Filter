@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Photo Filter">
+    <meta name="keywords" content="photo, filter, online, picture, image, photos, pictures, images">
+    <title>Photo Filter</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+</head>
+
+<body translate="no">
+    <nav class="navbar">
+        <div class="container">
+            <h1>
+                <a href="index.html">Photo Filter</a>
+            </h1>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="file-upload">
+            <input type="file" class="file-input" id="upload-file">
+            <label for="upload-file" class="file-label">Choose Image</label>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="effects-left">
+            <button class="filter-btn vintage-add btn">Vintage</button>
+            <button class="filter-btn lomo-add btn">Lomo</button>
+            <button class="filter-btn clarity-add btn">Clarity</button>
+            <button class="filter-btn sincity-add btn">Sin City</button>
+        </div>
+        <div class="effects-right">
+            <button class="filter-btn crossprocess-add btn">CrossProcess</button>
+            <button class="filter-btn pinhole-add btn">Pinhole</button>
+            <button class="filter-btn nostalgia-add btn">Nostalgia</button>
+            <button class="filter-btn hermajesty-add btn">HerMajesty</button>
+        </div>
+
+        <div class="btn-container filters">
+            <div class="btn-group">
+                <button class="filter-btn brightness-remove btn">-</button>
+                <button class="btn disabled" disabled>Brightness</button>
+                <button class="filter-btn brightness-add btn">+</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="filter-btn contrast-remove btn">-</button>
+                <button class="btn disabled" disabled>Contrast</button>
+                <button class="filter-btn contrast-add btn">+</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="filter-btn saturation-remove btn">-</button>
+                <button class="btn disabled" disabled>Saturation</button>
+                <button class="filter-btn saturation-add btn">+</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="filter-btn vibrance-remove btn">-</button>
+                <button class="btn disabled" disabled>Vibrance</button>
+                <button class="filter-btn vibrance-add btn">+</button>
+            </div>
+        </div>
+
+        <div class="btn-container download">
+            <button id="download-btn" class="btn">Download Image</button>
+            <button id="revert-btn" class="btn">Remove Filters</button>
+        </div>
+    </div>
+
+
+    <script src="js/caman.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
