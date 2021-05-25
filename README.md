@@ -4,6 +4,6 @@
 
 ## Built with CamanJS library, and vanilla JavaScript. 
 
-### Filter an image.
-### adjust the image.
-### Download the image.
+### Filter image.
+### Adjust image.
+### Download image.
